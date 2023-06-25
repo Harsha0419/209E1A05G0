@@ -6,7 +6,7 @@ const API_BASE_URL = 'http://104.211.219.98/train';
 const CLIENT_ID = 'd561eeb9-ea14-43ef-a0c7-d949aae2d454';
 const CLIENT_SECRET = 'dhUvtMBlfUoZYLEd';
 const accessToken =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODc2NzY0NjAsImNvbXBhbnlOYW1lIjoiVHJhaW4gQ2VudHJhbCIsImNsaWVudElEIjoiZDU2MWVlYjktZWExNC00M2VmLWEwYzctZDk0OWFhZTJkNDU0Iiwib3duZXJOYW1lIjoiIiwib3duZXJFbWFpbCI6IiIsInJvbGxObyI6IjQyMCJ9.j0iqzCDiyDmPr_j5ac901q3CdEEsvyUTe9ABoN95xiA';
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODc2NzgxODcsImNvbXBhbnlOYW1lIjoiVHJhaW4gQ2VudHJhbCIsImNsaWVudElEIjoiZDU2MWVlYjktZWExNC00M2VmLWEwYzctZDk0OWFhZTJkNDU0Iiwib3duZXJOYW1lIjoiIiwib3duZXJFbWFpbCI6IiIsInJvbGxObyI6IjQyMCJ9.uDmJwDuqV7nNOEHGos5EmL-AKG64hpYPROt1q7lELEA';
 // Authentication
 axios
   .post(`${API_BASE_URL}/auth`, {
@@ -112,6 +112,13 @@ app.get('/trains', (req, res) => {
             .details-btn:hover {
               background-color: #45a049;
             }
+
+            .footer {
+              text-align: center;
+              margin-top: 20px;
+              font-size: 14px;
+              color: #000; /* Updated color to black */
+            }
           </style>
           <h1>Available Trains</h1>
           <table>
@@ -142,6 +149,7 @@ app.get('/trains', (req, res) => {
               )
               .join('')}
           </table>
+          <p class="footer">Created by Palagiri Ganesh Harsha (Roll No: 209E1A05G0 ) | &copy; 2023 Palagiri Ganesh Harsha</p>
           <script>
             function viewDetails(trainNumber) {
               window.location.href = '/trains/' + trainNumber;
@@ -212,6 +220,13 @@ app.get('/trains/:trainNumber', (req, res) => {
             .details-btn:hover {
               background-color: #45a049;
             }
+
+            .footer {
+              text-align: center;
+              margin-top: 20px;
+              font-size: 14px;
+              color: #000; /* Updated color to black */
+            }
           </style>
           <div class="details">
             <h1>Train Details</h1>
@@ -239,6 +254,7 @@ app.get('/trains/:trainNumber', (req, res) => {
             </table>
             <button class="details-btn" onclick="goBack()">Go Back</button>
           </div>
+          <p class="footer">Created by Palagiri Ganesh Harsha (Roll No: 209E1A05G0 ) | &copy; 2023 Palagiri Ganesh Harsha</p>
           <script>
             function goBack() {
               window.history.back();

@@ -6,6 +6,10 @@ const PORT = 4000;
 // Add a CSS file
 app.use(express.static('public'));
 
+app.get('/', (req, res) => {
+  res.redirect('/numbers?url=primes');
+});
+
 app.get('/numbers', async (req, res) => {
   const baseUrl = 'http://104.211.219.98/numbers/';
   const urls = req.query.url;
@@ -95,6 +99,13 @@ app.get('/numbers', async (req, res) => {
             text-align: center;
             font-size: 18px;
           }
+
+          .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+          }
         </style>
       </head>
       <body>
@@ -112,7 +123,7 @@ app.get('/numbers', async (req, res) => {
             </div>
           `).join('')}
         </div>
-        <p style="text-align: center; margin-top: 20px;">Created by Palagiri Ganesh Harsha (Roll No: 209E1A05G0)</p>
+        <p class="footer">Created by Palagiri Ganesh Harsha (Roll No: 209E1A05G0) | &copy; 2023 Palagiri Ganesh Harsha</p>
       </body>
       </html>
     `;
