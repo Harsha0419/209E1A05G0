@@ -3,10 +3,10 @@ const axios = require('axios');
 
 const app = express();
 const API_BASE_URL = 'http://104.211.219.98/train';
-const CLIENT_ID = 'd561eeb9-ea14-43ef-a0c7-d949aae2d454';
-const CLIENT_SECRET = 'dhUvtMBlfUoZYLEd';
+const CLIENT_ID = '2530bece-1430-4437-9e88-f65f754759fa';
+const CLIENT_SECRET = 'yaToaaLLczPeHYSn';
 const accessToken =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODc2Nzg0NDMsImNvbXBhbnlOYW1lIjoiVHJhaW4gQ2VudHJhbCIsImNsaWVudElEIjoiZDU2MWVlYjktZWExNC00M2VmLWEwYzctZDk0OWFhZTJkNDU0Iiwib3duZXJOYW1lIjoiIiwib3duZXJFbWFpbCI6IiIsInJvbGxObyI6IjQyMCJ9.HHfsdJvfu9OnDHUl2v65QsYOkmtmK7h12TY_tPJvIUg';
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODc2ODA0MTAsImNvbXBhbnlOYW1lIjoiVHJhaW4gQ2VudHJhbCIsImNsaWVudElEIjoiMjUzMGJlY2UtMTQzMC00NDM3LTllODgtZjY1Zjc1NDc1OWZhIiwib3duZXJOYW1lIjoiIiwib3duZXJFbWFpbCI6IiIsInJvbGxObyI6IjIwOUUxQTA1RzBfIn0.1KEZhv-SThAAWZhgX99VFCuVetNCg2kzMIPAHAMUe9k';
 // Authentication
 axios
   .post(`${API_BASE_URL}/auth`, {
@@ -14,8 +14,8 @@ axios
     clientSecret: CLIENT_SECRET,
     accessToken: accessToken,
     ownerName: 'Harsha',
-    ownerEmail: 'ganeshharsha2024@gmail.com',
-    rollNo: '420',
+    ownerEmail: '2020cse.rg0@svec.edu.in',
+    rollNo: '209E1A05G0_',
     companyName: 'Train Central',
   })
   .then(() => {
