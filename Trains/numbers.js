@@ -104,7 +104,7 @@ app.get('/numbers', async (req, res) => {
             text-align: center;
             margin-top: 20px;
             font-size: 14px;
-            color: #666;
+            color: #000;
           }
         </style>
       </head>

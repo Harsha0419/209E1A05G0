@@ -6,7 +6,7 @@ const API_BASE_URL = 'http://104.211.219.98/train';
 const CLIENT_ID = 'd561eeb9-ea14-43ef-a0c7-d949aae2d454';
 const CLIENT_SECRET = 'dhUvtMBlfUoZYLEd';
 const accessToken =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODc2NzgxODcsImNvbXBhbnlOYW1lIjoiVHJhaW4gQ2VudHJhbCIsImNsaWVudElEIjoiZDU2MWVlYjktZWExNC00M2VmLWEwYzctZDk0OWFhZTJkNDU0Iiwib3duZXJOYW1lIjoiIiwib3duZXJFbWFpbCI6IiIsInJvbGxObyI6IjQyMCJ9.uDmJwDuqV7nNOEHGos5EmL-AKG64hpYPROt1q7lELEA';
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODc2Nzg0NDMsImNvbXBhbnlOYW1lIjoiVHJhaW4gQ2VudHJhbCIsImNsaWVudElEIjoiZDU2MWVlYjktZWExNC00M2VmLWEwYzctZDk0OWFhZTJkNDU0Iiwib3duZXJOYW1lIjoiIiwib3duZXJFbWFpbCI6IiIsInJvbGxObyI6IjQyMCJ9.HHfsdJvfu9OnDHUl2v65QsYOkmtmK7h12TY_tPJvIUg';
 // Authentication
 axios
   .post(`${API_BASE_URL}/auth`, {
